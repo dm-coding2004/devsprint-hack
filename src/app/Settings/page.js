@@ -45,7 +45,7 @@ function Home() {
                 >
                   <span>Phone No.:</span>
                   {"  "}
-                  <span>{localStorage.getItem("phoneNumber")}</span>
+                  <span>{window.localStorage.getItem("phoneNumber")}</span>
                 </p>
               </div>
               <div className="ml-7 mr-5 bg-stone-200 ">
@@ -56,7 +56,7 @@ function Home() {
                 >
                   <span>Unique ID:</span>
                   {"  "}
-                  <span>{localStorage.getItem("userUID")}</span>
+                  <span>{window.localStorage.getItem("userUID")}</span>
                 </p>
               </div>
             </>
@@ -71,7 +71,7 @@ function Home() {
                 >
                   <span>Phone No.:</span>
                   {"  "}
-                  <span>{localStorage.getItem("phoneNumber")}</span>
+                  <span>{window.localStorage.getItem("phoneNumber")}</span>
                 </p>
               </div> */}
             </>
