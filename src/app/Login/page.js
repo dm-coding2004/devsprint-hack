@@ -5,7 +5,7 @@ import Login from "./components/Login";
 import LoginHeader from "./components/LoginHeader";
 import LoginFooter from "./components/LoginFooter";
 
-function page() {
+function Home() {
   return (
     <>
       <LoginHeader />
@@ -14,4 +14,4 @@ function page() {
   );
 }
 
-export default page;
+export default Home;

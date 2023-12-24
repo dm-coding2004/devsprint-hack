@@ -3,7 +3,7 @@ import FeedbackForm from './components/FeedbackForm'
 import FeedbackFooter from './components/FeedbackFooter'
 import Header from '../components/Header'
 
-function page() {
+function Home() {
   return (
   <>
  <Header/>
@@ -13,4 +13,4 @@ function page() {
   )
 }
 
-export default page
+export default Home;

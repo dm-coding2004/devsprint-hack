@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function page() {
+function Home() {
   const [choice, setChoice] = useState("profile");
   return (
     <div>
@@ -84,4 +84,4 @@ function page() {
   );
 }
 
-export default page;
+export default Home;

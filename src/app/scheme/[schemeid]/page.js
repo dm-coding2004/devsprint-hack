@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-function page({ params }) {
+function Home({ params }) {
   const [data, setData] = useState(null);
   const schemeID = params.schemeid;
   useEffect(() => {
@@ -112,4 +112,4 @@ function tempComp() {
   );
 }
 
-export default page;
+export default Home;

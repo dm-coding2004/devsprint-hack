@@ -7,7 +7,7 @@ import FilterListIcon from "@mui/icons-material/FilterList";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
-function page() {
+function Home() {
   const [filter, setFilter] = useState(false);
   const router = useRouter();
   const [schemeLists, setSchemeLists] = useState([]);
@@ -207,4 +207,4 @@ function page() {
   );
 }
 
-export default page;
+export default Home;
