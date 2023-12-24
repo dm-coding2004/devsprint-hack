@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 function BodyContent() {
   return (
-  <section className="bg-[#0b7261] text-white w-full h-[500px] top-0 mt-[-22px]">
+    <section className="bg-[#0b7261] text-white w-full h-[500px] top-0 mt-[-22px]">
       <div className="mr-auto ml-auto h-full w-full pr-4 pl-4  ">
         <div className="w-full h-[76px]">
           <header className="pb-0 pt-[10px] pr-0 ml-[56px]  inline-block mt-7 h-[76px] w-52 text-center bg-[#0b7261]">
@@ -12,37 +12,40 @@ function BodyContent() {
         </div>
         <div className="flex">
           <section className="pb-0 pt-0 pr-0 pl-0 mt-10 w-full ml-[65px] ">
-            <h1 className=" font-semibold text-[33px] ">Performance</h1>
+            <h1 className=" font-semibold text-[33px] "> Overview</h1>
             <p className=" font-light text-[19px]   pt-[35px]">
-              Schemes is blazingly fast and memory-efficient: with no runtime or
-              garbage collector, it can power performance-critical services, run
-              on embedded devices, and easily integrate with other languages.
+              India has implemented a plethora of government schemes aimed at
+              fostering socio-economic development and improving the quality of
+              life for its citizens.Additionally, the Swachh Bharat Abhiyan
+              strives to achieve nationwide cleanliness and sanitation.
             </p>
           </section>
 
           <section className="pb-0 pt-0 pr-0 pl-0 mt-10 w-full ml-[65px] ">
-            <h1 className=" font-semibold text-[33px] ">Reliability</h1>
+            <h1 className=" font-semibold text-[33px] "> Social Welfare</h1>
             <p className=" font-light text-[19px]  pt-[35px]">
-              Schemes's rich type system and ownership model guarantee
-              memory-safety and thread-safety — enabling you to eliminate many
-              classes of bugs at compile-time.
+              Several government schemes specifically target social welfare,
+              focusing on vulnerable and marginalized sections of society. The
+              Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA)
+              guarantees 100 days of employment in a financial year to rural
+              households.
             </p>
           </section>
 
           <section className="pb-0 pt-0 pr-0 pl-0 mt-10 w-full ml-[65px] ">
-            <h1 className=" font-semibold text-[33px] ">Performance</h1>
+            <h1 className=" font-semibold text-[33px] ">
+              Economic Dev
+            </h1>
             <p className=" font-light text-[19px] pt-[35px]">
-              Schemes has great documentation, a friendly compiler with useful
-              error messages, and top-notch tooling — an integrated package
-              manager and build tool, smart multi-editor support with
-              auto-completion and type inspections, an auto-formatter, and more.
+              To stimulate economic growth and entrepreneurship, the government
+              has introduced schemes such as the Make in India campaign,
+              promoting manufacturing and job creation.
             </p>
           </section>
         </div>
       </div>
-      </section>
-
-  )
+    </section>
+  );
 }
 
-export default BodyContent
+export default BodyContent;

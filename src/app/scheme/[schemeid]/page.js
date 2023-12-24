@@ -9,7 +9,7 @@ function page({ params }) {
   useEffect(() => {
     async function getData() {
       const response = await fetch(
-        `http://localhost:9000/scheme/v1/${schemeID}`,
+        `https://devsprint-hack-server-production.up.railway.app/scheme/v1/${schemeID}`,
         {
           headers: {
             "Content-Type": "application/json",

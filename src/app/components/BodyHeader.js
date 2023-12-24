@@ -9,9 +9,9 @@ function BodyHeader() {
             Sahay
           </h1>
           <h2 className="mt-10 mb-0 text-4xl font-normal line-clamp-2 ">
-            Description
+            Get Government Scheme
             <br />
-            of product
+            info at your fingertips
           </h2>
         </div>
         <div className="pl-0 pr-0 flex flex-col  w-[330px] mr-[220px] cursor-pointer">

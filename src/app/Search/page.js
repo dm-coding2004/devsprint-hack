@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SearchIcon from "@mui/icons-material/Search";
@@ -18,14 +18,26 @@ function page() {
   });
   async function handleClick(e) {
     e.preventDefault();
-    const response = await fetch(`http://localhost:9000/search/v1`, {
-      method: "GET",
-      // body: JSON.stringify({...fiveQuery}),
-    });
-    const data = await response.json();
-    console.log(data);
-    setSchemeLists(data);
+    // const response = await fetch(`http://localhost:9000/search/v1`, {
+    //   method: "GET",
+    //   // body: JSON.stringify({...fiveQuery}),
+    // });
+    // const data = await response.json();
+    // console.log(data);
+    // setSchemeLists(data);
   }
+
+  useEffect(() => {
+    async function getData() {
+      const response = await fetch(`https://devsprint-hack-server-production.up.railway.app/search/v1`, {
+        method: "GET",
+      });
+      const data = await response.json();
+      // console.log(data);
+      setSchemeLists(data);
+    }
+    getData();
+  }, []);
   return (
     <>
       <Header />
@@ -175,7 +187,7 @@ function page() {
 
       {schemeLists.map((ele) => (
         <div
-          className="bg-stone-300 hover:bg-stone-300/75 mt-6 p-4 text-black font-black"
+          className="bg-stone-300 hover:bg-stone-400/65 mt-6 p-4 text-black font-black"
           // onClick={() => router.push(`/scheme/${ele.scheme_sname}`)}
         >
           <Link href={`/scheme/${ele.scheme_sname}`} target="_blank">

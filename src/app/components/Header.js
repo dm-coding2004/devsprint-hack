@@ -22,11 +22,7 @@ function Header({ user }) {
         <li
           className="lg:pl-8 underline mt-4 lg:mt-0 "
           onClick={() => {
-            if (user === null) {
-              router.push("Login");
-            } else {
-              router.push("Search");
-            }
+            router.push("Search");
           }}
         >
           Search
@@ -35,11 +31,7 @@ function Header({ user }) {
         <li
           className=" lg:pl-8 underline mt-4 lg:mt-0"
           onClick={() => {
-            if (user === null) {
-              router.push("Login");
-            } else {
-              router.push("Settings");
-            }
+            router.push("Settings");
           }}
         >
           Settings/Profile
