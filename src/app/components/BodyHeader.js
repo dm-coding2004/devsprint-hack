@@ -16,7 +16,7 @@ function BodyHeader() {
         </div>
         <div className="pl-0 pr-0 flex flex-col  w-[330px] mr-[220px] cursor-pointer">
           <div className="flex items-center justify-center mt-[17px] h-[86px]  border-[1px] hover:border-black rounded-md border-[#ffc832] w-[340px] bg-[#ffc832]">
-            <a id="#" className=" font-bold text-[25px]">
+            <a id="#" href="/Search" className=" font-bold text-[25px]">
               Search Schemes
             </a>
           </div>
