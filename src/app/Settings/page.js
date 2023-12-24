@@ -1,10 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Home() {
   const [choice, setChoice] = useState("profile");
+  const [userDetails, setUserDetails] = useState({ phoneNumber: "", UUID: "" });
+  useEffect(() => {
+    if (window !== undefined) {
+      const phoneNumber = window.localStorage.getItem("phoneNumber");
+      const UUID = window.localStorage.getItem("userUID");
+      setUserDetails({ phoneNumber, UUID });
+    }
+  }, []);
   return (
     <div>
       <Header />
@@ -45,7 +53,7 @@ function Home() {
                 >
                   <span>Phone No.:</span>
                   {"  "}
-                  <span>{window.localStorage.getItem("phoneNumber")}</span>
+                  <span>{userDetails.phoneNumber}</span>
                 </p>
               </div>
               <div className="ml-7 mr-5 bg-stone-200 ">
@@ -56,7 +64,7 @@ function Home() {
                 >
                   <span>Unique ID:</span>
                   {"  "}
-                  <span>{window.localStorage.getItem("userUID")}</span>
+                  <span>{userDetails.UUID}</span>
                 </p>
               </div>
             </>
