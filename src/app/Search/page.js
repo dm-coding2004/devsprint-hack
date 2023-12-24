@@ -186,7 +186,7 @@ function Home() {
       )}
 
       {schemeLists.map((ele) => (
-        <div
+        <div key={ele.scheme_sname}
           className="bg-stone-300 hover:bg-stone-400/65 mt-6 p-4 text-black font-black"
           // onClick={() => router.push(`/scheme/${ele.scheme_sname}`)}
         >

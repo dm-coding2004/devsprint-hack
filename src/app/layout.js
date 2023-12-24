@@ -12,10 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v0/inject.js" defer async></script>
         <script
           src="https://mediafiles.botpress.cloud/2c8d4316-c58b-4e76-889a-085a8c3c394b/webchat/config.js"
-          defer
+          defer async
         ></script>
       </head>
       <body className={inter.className}>{children}</body>

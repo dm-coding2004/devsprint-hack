@@ -56,6 +56,7 @@ function Home({ params }) {
           if (ele.endsWith(":\r")) {
             return (
               <h2
+              key={index}
                 className="font-sans text-6xl pl-4
                w-[60%] ml-[20%] mr-[20%] font-black "
               >
@@ -66,7 +67,7 @@ function Home({ params }) {
             null;
           } else {
             return (
-              <div
+              <div key={index}
                 className="clear-both p-4 mt-6 tracking-wider leading-relaxed
         w-[60%] ml-[20%] mr-[20%] font-medium text-2xl"
               >
